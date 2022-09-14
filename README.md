@@ -26,7 +26,7 @@ Jawab:
 
 -Buat file models.py dan tambah model yang digunakan sesuai dengan data yang ada.
 
--Jalankan python manage.py makemigrations sebagai persiapan migrasi DB dan python manage.py migrate untuk migrasi.
+-Jalankan python manage.py makemigrations sebagai persiapan migrasi dan python manage.py migrate untuk migrasi.
 
 -Buat file views.py dan tambah fungsi untuk merespond sebuah permintaan. Lengkapi juga sehingga dapat memberikan data/context sesuai dengan data yang dimiliki.
 
