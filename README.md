@@ -22,12 +22,21 @@ Kita akan tetap dapat membuat aplikasi Django tersebut walaupun tidak menggunaka
 Jawab:
 
 -Tambah aplikasi katalog pada INSTALLED_APPS.
+
 -Buat file models.py dan tambah model yang digunakan sesuai dengan data yang ada.
+
 -Jalankan python manage.py makemigrations sebagai persiapan migrasi DB dan python manage.py migrate untuk migrasi.
+
 -Buat file views.py dan tambah fungsi untuk merespond sebuah permintaan. Lengkapi juga sehingga dapat memberikan data/context sesuai dengan data yang dimiliki.
+
 -Ubah template di katalog.html agar dapat menunjukkan data yang telah diberikan dari context.
+
 -Buat file urls.py di dalam folder aplikasi dan tambah fungsi dari views.py sebagai jawaban pada halaman indeks (/).
+
 -Tambah urls.py sebelumnya ke dalam file urls.py di dalam folder proyek (project_django).
+
 -Buat aplikasi baru di Heroku, dan dapatkan API key dan nama aplikasinya di sana.
+
 -Tambah nama aplikasi dan api key ke dalam masing masing repository key
+
 -Add, commit, dan push perubahan yang ada. Lalu github action akan mendeploy 
