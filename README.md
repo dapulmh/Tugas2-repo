@@ -19,6 +19,7 @@ Jawab:
 Kita akan tetap dapat membuat aplikasi Django tersebut walaupun tidak menggunakan virtual environment tetapi versi python dan libraries yang digunakan harus diperhatikan agar tidak bermasalah.
 
 3. Jelaskan bagaimana cara kamu mengimplementasikan poin-poin tersebut.
+
 Jawab:
 
 -Tambah aplikasi katalog pada INSTALLED_APPS.
