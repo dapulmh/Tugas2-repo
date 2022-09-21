@@ -1,0 +1,112 @@
+[
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":1,
+        "fields":{
+            "watched": true,
+            "title":"Inception",
+            "rating": 4,
+            "release_date":"2010-07-16",
+            "review":"This endlessly fascinating swirl of a film could have come only from Nolan, who blends the cerebral twistiness of Memento (his thriller that moves backward in time) with the spectacular action of his Batman megahit, The Dark Knight."
+        }
+},
+{
+        "model":"mywatchlist.mywatchlist",
+        "pk":2,
+        "fields":{
+            "watched":true,
+            "title":"Karate kid",
+            "rating": 4,
+            "release_date":"1984-06-22",
+            "review":"Formulaic, manipulative, hokey — and thoroughly rousing… the film's sincerity and poignance have a way of steamrolling over gaps in plausibility and logic."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":3,
+        "fields":{
+            "watched": false,
+            "title":"Pinocchio",
+            "rating": 1,
+            "release_date": "2022-09-08",
+            "review":"Just as Pinocchio wasn’t a real boy to start, this wasn’t a real movie – and there’s almost no chance it learnt enough lessons to become one with a soul."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":4,
+        "fields":{
+            "watched":true,
+            "title":"Thor love & thunder",
+            "rating": 3,
+            "release_date":"2022-07-08",
+            "review":"The film passes through the nervous system without delivering any sustenance or even leaving a residue."
+        }
+},
+{
+        "model":"mywatchlist.mywatchlist",
+        "pk":5,
+        "fields":{
+            "watched":false,
+            "title":"Everything everywhere all at once",
+            "rating": 5,
+            "release_date": "2022-04-08",
+            "review":"Exhilarating, funny and moving, their film is also messy, overstuffed and a trifle exhausting."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":6,
+        "fields":{
+            "watched":false,
+            "title":"prey",
+            "rating": 4,
+            "release_date": "2022-08-05",
+            "review":"For my money it’s the best since the original."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":7,
+        "fields":{
+            "watched":false,
+            "title":"Elvis",
+            "rating": 4,
+            "release_date":"2022-05-24",
+            "review":"Elvis is hyperbolic, one-dimensional and ludicrous – but as high-excess cinematic myth-making, it’s a blast."
+        }
+},
+{
+        "model":"mywatchlist.mywatchlist",
+        "pk":8,
+        "fields":{
+            "watched":true,
+            "title":"Avatar",
+            "rating": 4,
+            "release_date": "2009-12-18",
+            "review":"Rewatching it with fresh eyes 10 years later, the movie's pluses and minuses both rise into much starker relief. The verdict: It's...fine."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":9,
+        "fields":{
+            "watched":false,
+            "title":"Jurassic world dominion",
+            "rating": 2,
+            "release_date": "2022-06-10",
+            "review":"Goldblum aside, it's hard not to feel that the warm-blooded actors are phoning it in a bit."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":10,
+        "fields":{
+            "watched":false,
+            "title":"The Batman",
+            "rating": 4,
+            "release_date":"2022-03-04",
+            "review":"Operatic, simmering, and replete with a smoky noir atmosphere, The Batman is an enthralling package of contradictions."
+        }
+    }
+]
