@@ -2,9 +2,9 @@
 
 Repositori ini milik Daffa Maulana Haekal (2106652083) untuk kebutuhan [Tugas3](https://pbp-fasilkom-ui.github.io/ganjil-2023/assignments/tugas/tugas-3).
 
-- Aplikasi heroku (html) : https://tugas2app.herokuapp.com/mywatchlist/html 
-- Aplikasi heroku (xml) : https://tugas2app.herokuapp.com/mywatchlist/xml 
-- Aplikasi heroku (json) : https://tugas2app.herokuapp.com/mywatchlist/json
+- Aplikasi heroku (html) : https://tugas3app.herokuapp.com/mywatchlist/html 
+- Aplikasi heroku (xml) : https://tugas3app.herokuapp.com/mywatchlist/xml 
+- Aplikasi heroku (json) : https://tugas3app.herokuapp.com/mywatchlist/json
 
 *Read this in other languages: [Indonesian](README.md), [English](README.en.md)*
 
