@@ -6,10 +6,25 @@ from django.core import serializers
 # Create your views here.
 def show_mywatchlist(request):
     data = MyWatchList.objects.all()
+    already_watch = 0
+    not_watch = 0
+
+    for title in data:
+        if title.watched == True:
+            already_watch += 1
+        else:
+            not_watch +=1 
+        
+    if already_watch >= not_watch:
+        msg = "Selamat, kamu sudah banyak menonton!"
+    else:
+        msg = "Wah, kamu masih sedikit menonton!"
+
     context = {
         'list_item': data,
         'nama': 'Daffa Maulana Haekal',
-        'id': '2106652083'
+        'id': '2106652083',
+        'message': msg
     }
     return render(request, "mywatchlist.html", context)
 
@@ -35,9 +50,24 @@ def show_xml_by_id(request, id):
 
 def show_html_by_id(request, id):
     data = MyWatchList.objects.filter(pk=id)
+    already_watch = 0
+    not_watch = 0
+
+    for title in data:
+        if title.watched == True:
+            already_watch += 1
+        else:
+            not_watch +=1 
+        
+    if already_watch >= not_watch:
+        msg = "Selamat, kamu sudah banyak menonton!"
+    else:
+        msg = "Wah, kamu masih sedikit menonton!"
+
     context = {
         'list_item': data,
         'nama': 'Daffa Maulana Haekal',
-        'id': '2106652083'
+        'id': '2106652083',
+        'message': msg
     }
     return render(request, "mywatchlist.html", context)
