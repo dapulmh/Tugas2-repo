@@ -1,6 +1,6 @@
 # Tugas 4: Pengimplementasian Form dan Autentikasi Menggunakan Django
 
-Repositori ini milik Daffa Maulana Haekal (2106652083) untuk kebutuhan [Tugas3](https://pbp-fasilkom-ui.github.io/ganjil-2023/assignments/tugas/tugas-3).
+Repositori ini milik Daffa Maulana Haekal (2106652083) untuk kebutuhan [Tugas4](https://pbp-fasilkom-ui.github.io/ganjil-2023/assignments/tugas/tugas-3)
 
 - Aplikasi heroku : https://tugas2app.herokuapp.com/todolist
 
