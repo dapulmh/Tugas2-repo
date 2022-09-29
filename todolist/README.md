@@ -4,8 +4,6 @@ Repositori ini milik Daffa Maulana Haekal (2106652083) untuk kebutuhan [Tugas4](
 
 - Aplikasi heroku : https://tugas2app.herokuapp.com/todolist
 
-*Read this in other languages: [Indonesian](README.md), [English](README.en.md)*
-
 ## Pertanyaan
 
 1.  Apa kegunaan {% csrf_token %} pada elemen <form>? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form> ?
