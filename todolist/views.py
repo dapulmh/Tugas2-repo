@@ -80,15 +80,13 @@ def create_task_user(request):
 
 @login_required(login_url='/todolist/login/')
 def finish_user(request, id):
-    if request.method == "POST":
-        task = TaskTodolist.objects.get(id=id)
-        task.is_finished = not(task.is_finished)
-        task.save()
-        return redirect('todolist:show_todolist')
+    task = TaskTodolist.objects.get(id=id)
+    task.is_finished = not(task.is_finished)
+    task.save()
+    return redirect('todolist:show_todolist')
 
 @login_required(login_url='/todolist/login/')
 def delete_user(request, id):
-    if request.method == "POST":
-        task = TaskTodolist.objects.get(id=id)
-        task.delete()
-        return redirect('todolist:show_todolist')
+    task = TaskTodolist.objects.get(id=id)
+    task.delete()
+    return redirect('todolist:show_todolist')
