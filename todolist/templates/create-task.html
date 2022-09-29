@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<title>Create Task</title>
+{% endblock meta %}
+
+{% block content %}  
+
+<div class = "create-task">
+    
+    <h1>Tambahkan Task Baru</h1>  
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>Judul: </td>
+                <td><input type="text" name="title" class="form-control"></td>
+            </tr>
+    
+            <tr>
+                <td>Deskripsi: </td>
+                <td> <textarea name="description" rows="10" cols="55"></textarea></td>
+            </tr>
+    
+            <tr>
+                <td></td>
+                <td><input class="submit" type="submit" value="Create"></td>
+            </tr>
+        </table>
+        
+        
+        <h5>Sesi terakhir login: {{ last_login }}</h5>
+    
+    </form>
+
+
+</div>
+
+{% endblock content %}
