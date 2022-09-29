@@ -15,7 +15,7 @@ terjadi error dikarenakan input yang diterima gagal diverifikasi.
      Jelaskan secara gambaran besar bagaimana cara membuat <form> secara manual.
  
 Kita tetap dapat membuat form secara manual tanpa memanfaatkan generator. Caranya adalah dengan membuat elemen <form>, 
-lalu mengisi form tersebut dengan elemen <input>. kemudian pastikan pula terdapat <input type="submit"> untuk meng-submit form tersebut. Hal itu adalah hal yang saya 
+lalu mengisi form tersebut dengan elemen input. kemudian pastikan pula terdapat input type="submit" untuk meng-submit form tersebut. Hal itu adalah hal yang saya 
 lakukan pada kode create-task saya.
  
 3.    Jelaskan proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, 
