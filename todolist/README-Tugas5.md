@@ -8,26 +8,58 @@ Repositori ini milik Daffa Maulana Haekal (2106652083) untuk kebutuhan [Tugas5](
 
 1.   Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?
   
-{% csrf_token %} berguna untuk melindungi dari CSRF (Cross Site Request Forgery) Attack. Jika program dilakukan tanpa {% csrf_token %} maka akan 
-terjadi error dikarenakan input yang diterima gagal diverifikasi.
+### Internal CSS
+
+Internal CSS adalah kode CSS yang ditulis di dalam tag <style> dan kode HTML dituliskan di bagian atas (header) file HTML. Internal CSS dapat digunakan untuk membuat tampilan pada satu halaman website dan tidak digunakan pada halaman website yang lain.
+  
+#### Kelebihan 
+ 
+- Perubahan pada Internal CSS hanya berlaku pada satu halaman saja sehingga tidak mengganggu halaman lain.
+- Anda tidak perlu melakukan upload beberapa file karena HTML dan CSS berada dalam satu file.
+- Class dan ID bisa digunakan oleh internal stylesheet.
+ 
+#### Kekurangan
+- Tidak efisien apabila Anda menggunakan CSS yang sama dalam beberapa file atau halaman website yang lain.
+- Membuat performa website lebih lemot. Sebab, CSS yang berbeda-beda akan mengakibatkan loading ulang setiap kali Anda ganti halaman website. 
+  
+### External CSS
+  
+Eksternal CSS adalah kode CSS yang ditulis terpisah dengan kode HTML Eksternal CSS ditulis di sebuah file khusus yang berekstensi .css. File eksternal CSS biasanya diletakkan setelah bagian <head> pada halaman.
+  
+#### Kelebihan 
+- Ukuran file HTML akan menjadi lebih kecil dan membuat struktur dari kode HTML jadi lebih rapi.
+- Loading website menjadi lebih cepat.
+- File CSS dapat digunakan di beberapa halaman website sekaligus. 
+
+#### Kekurangan
+  
+-Halaman akan menjadi berantakan, ketika file CSS gagal dipanggil oleh file HTML. Hal ini terjadi disebabkan karena koneksi internet yang lambat.
+  
+### Inline CSS
+  
+Inline CSS adalah kode CSS yang ditulis langsung pada atribut elemen HTML. Setiap elemen HTML memiliki atribut style, di situ lah inline CSS ditulis.
+
+#### Kelebihan 
+  
+- Sangat membantu ketika Anda hanya ingin menguji dan melihat perubahan pada satu elemen.
+- Berguna untuk memperbaiki kode dengan cepat.
+- Proses permintaan HTTP yang lebih kecil dan proses load website akan lebih cepat.
+  
+#### Kekurangan
+  
+- Tidak efisien karena Inline style CSS hanya bisa diterapkan pada satu elemen HTML.
   
 2.   Jelaskan tag HTML5 yang kamu ketahui !
  
 Kita tetap dapat membuat form secara manual tanpa memanfaatkan generator. Caranya adalah dengan membuat elemen <form>, 
 lalu mengisi form tersebut dengan elemen input. kemudian pastikan pula terdapat input type="submit" untuk meng-submit form tersebut. Hal itu adalah hal yang saya 
 lakukan pada kode create-task saya.
- 
-3.    Jelaskan proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, 
-      hingga munculnya data yang telah disimpan pada template HTML.
 
-Pada saat user mengisi data-data kemudian mengklik tombol submit maka data-data tersebut akan diperiksa. Jika data yang dimasukkan tidak valid maka user akan diarahkan untuk mengisi kembali form dengan data yang berbeda sampai data tersebut valid.
-Kemudian data tersebut akan diproses, misalnya dengan membuat model sesuai dengan data yang diperoleh dan lalu data tersebut akan dimasukkan ke database. Ketika data tersebut dibutuhkan, maka model pada databse akan ditayangkan pada template html
+3.    Jelaskan tipe-tipe CSS selector yang kamu ketahui !
 
-4.    Jelaskan tipe-tipe CSS selector yang kamu ketahui !
+#### 
 
-
-
-5.  Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas !
+4.  Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas !
 
 - Tambah aplikasi todolist pada INSTALLED_APPS.
 
