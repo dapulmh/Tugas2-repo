@@ -65,9 +65,9 @@ Grouping selector digunakan untuk memilih semua elemen dengan definisi style yan
 
 3.Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas !
 
-1.Kustomisasi templat HTML yang telah dibuat pada Tugas 4 dengan menggunakan CSS atau CSS framework (seperti Bootstrap, Tailwind, Bulma) dengan ketentuan sebagai 
+- Kustomisasi templat HTML yang telah dibuat pada Tugas 4 dengan menggunakan CSS atau CSS framework (seperti Bootstrap, Tailwind, Bulma) dengan ketentuan sebagai 
   
-2.Membuat keempat halaman yang dikustomisasi menjadi responsive.__<br>
+- Membuat keempat halaman yang dikustomisasi menjadi responsive.__<br>
 
   
 4. Jelaskan tag HTML5 yang kamu ketahui.
@@ -76,7 +76,6 @@ Berikut merupakan tag dalam HTML5 yang sering dipakai
 1. __CSS dan JS__ <br>
  Untuk melampirkan file css dan javascript sebagai design dan agar website terlihat menarik<br>
  
-
 2. __*Semantics*__<br>
  Di HTML5 kita memiliki struktur semantik seperti `<header>`, `<footer>`, dan <nav> untuk contoh kode seperti ini.<br>
 
@@ -93,5 +92,3 @@ Berikut merupakan tag dalam HTML5 yang sering dipakai
 
 6.  __*Local Storage*__<br>
  Dengan fungsi ini, pengguna dapat mengakses data secara lokal dalam browser web. Sebelum pengguna HTML5 menyimpan data di cookie dengan setiap permintaan server.<br>
-
-
