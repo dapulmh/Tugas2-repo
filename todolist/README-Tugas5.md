@@ -52,20 +52,21 @@ Inline CSS adalah kode CSS yang ditulis langsung pada atribut elemen HTML. Setia
 2.    Jelaskan tipe-tipe CSS selector yang kamu ketahui !
   
 Ada beberapa jenis *CSS selectors*. di antaranya adalah:<br>
-1. __*CSS Element Selector*__<br>
+1.  __*CSS Element Selector*__<br>
 Selektor elemen memilih elemen HTML berdasarkan nama.<br>
-2. __*CSS Id Selector*__<br>
+2.  __*CSS Id Selector*__<br>
 Selector id memilih atribut id dari elemen HTML untuk memilih elemen tertentu. Id selalu unik di dalam halaman sehingga dipilih untuk memilih satu elemen unik. Itu ditulis dengan karakter hash (#), diikuti oleh id elemen.
-3. __*CSS Class Selector*__<br>
+3.  __*CSS Class Selector*__<br>
 Selektor kelas memilih elemen HTML dengan atribut kelas tertentu. Digunakan dengan karakter titik. (simbol titik penuh) diikuti dengan nama kelas.<br>
-4. __*CSS Universal Selector*__<br>
+4.  __*CSS Universal Selector*__<br>
 Selektor universal digunakan sebagai karakter wildcard. Ini memilih semua elemen pada halaman.<br>
-5. __*CSS Group Selector*__<br>
+5.  __*CSS Group Selector*__<br>
 Grouping selector digunakan untuk memilih semua elemen dengan definisi style yang sama. Grouping selector digunakan untuk meminimalkan kode. Koma digunakan untuk memisahkan setiap selektor dalam pengelompokan.<br>
 
-3.  Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas !
+3.Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas !
 
-1. Kustomisasi templat HTML yang telah dibuat pada Tugas 4 dengan menggunakan CSS atau CSS framework (seperti Bootstrap, Tailwind, Bulma) dengan ketentuan sebagai 
+1.Kustomisasi templat HTML yang telah dibuat pada Tugas 4 dengan menggunakan CSS atau CSS framework (seperti Bootstrap, Tailwind, Bulma) dengan ketentuan sebagai 
+  
 2.Membuat keempat halaman yang dikustomisasi menjadi responsive.__<br>
 
   
