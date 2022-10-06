@@ -49,51 +49,48 @@ Inline CSS adalah kode CSS yang ditulis langsung pada atribut elemen HTML. Setia
   
 - Tidak efisien karena Inline style CSS hanya bisa diterapkan pada satu elemen HTML.
   
-2.   Jelaskan tag HTML5 yang kamu ketahui !
+2.    Jelaskan tipe-tipe CSS selector yang kamu ketahui !
+  
+Ada beberapa jenis *CSS selectors*. di antaranya adalah:<br>
+1. __*CSS Element Selector*__<br>
+Selektor elemen memilih elemen HTML berdasarkan nama.<br>
+2. __*CSS Id Selector*__<br>
+Selector id memilih atribut id dari elemen HTML untuk memilih elemen tertentu. Id selalu unik di dalam halaman sehingga dipilih untuk memilih satu elemen unik. Itu ditulis dengan karakter hash (#), diikuti oleh id elemen.
+3. __*CSS Class Selector*__<br>
+Selektor kelas memilih elemen HTML dengan atribut kelas tertentu. Digunakan dengan karakter titik. (simbol titik penuh) diikuti dengan nama kelas.<br>
+4. __*CSS Universal Selector*__<br>
+Selektor universal digunakan sebagai karakter wildcard. Ini memilih semua elemen pada halaman.<br>
+5. __*CSS Group Selector*__<br>
+Grouping selector digunakan untuk memilih semua elemen dengan definisi style yang sama. Grouping selector digunakan untuk meminimalkan kode. Koma digunakan untuk memisahkan setiap selektor dalam pengelompokan.<br>
+
+3.  Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas !
+
+1. Kustomisasi templat HTML yang telah dibuat pada Tugas 4 dengan menggunakan CSS atau CSS framework (seperti Bootstrap, Tailwind, Bulma) dengan ketentuan sebagai 
+2.Membuat keempat halaman yang dikustomisasi menjadi responsive.__<br>
+
+  
+4. Jelaskan tag HTML5 yang kamu ketahui.
+
+Berikut merupakan tag dalam HTML5 yang sering dipakai
+1. __CSS dan JS__ <br>
+ Untuk melampirkan file css dan javascript sebagai design dan agar website terlihat menarik<br>
  
-Kita tetap dapat membuat form secara manual tanpa memanfaatkan generator. Caranya adalah dengan membuat elemen <form>, 
-lalu mengisi form tersebut dengan elemen input. kemudian pastikan pula terdapat input type="submit" untuk meng-submit form tersebut. Hal itu adalah hal yang saya 
-lakukan pada kode create-task saya.
 
-3.    Jelaskan tipe-tipe CSS selector yang kamu ketahui !
+2. __*Semantics*__<br>
+ Di HTML5 kita memiliki struktur semantik seperti `<header>`, `<footer>`, dan <nav> untuk contoh kode seperti ini.<br>
 
-#### 
+3. __*Article* dan *Section*__<br>
 
-4.  Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas !
+ section tag digunakan untuk mendefinisikan elemen html seperti header dan footer dan lainnya.<br>
 
-- Tambah aplikasi todolist pada INSTALLED_APPS.
+ article tag digunakan untuk mendefinisikan konten independen tertentu<br>
+4. __*Input types, attributes and forms*__<br>
+ input type dan attributes baru telah diperkenalkan di HTML 5<br>
 
-- Buat file models.py dan tambah model yang digunakan sesuai dengan data yang ada.
+5. __*HTML5 editable content*__ <br>
+ HTML5 memiliki atribut baru, sekarang kita dapat mengedit konten dengan menambahkan atribut contenteditable ke dalamnya.<br>
 
-- Jalankan python manage.py makemigrations sebagai persiapan migrasi dan python manage.py migrate untuk migrasi.
+6.  __*Local Storage*__<br>
+ Dengan fungsi ini, pengguna dapat mengakses data secara lokal dalam browser web. Sebelum pengguna HTML5 menyimpan data di cookie dengan setiap permintaan server.<br>
 
-- Buat file views.py dan tambah fungsi untuk merespond sebuah permintaan. Lengkapi juga sehingga dapat memberikan data/context sesuai dengan data yang dimiliki. 
-  buat juga fungsi mengenai show_todolist, login_user, registrasi, create_task untuk kebutuhan website
 
-- Buat todolist.html untuk halaman utama todolist beserta widget-widgetnya.
-
-- Buat login.html untuk login ke todolist sesuai user beserta widget-widgetnya.
-  
-- Buat registrasi.html untuk halaman registrasi todolist beserta widget-widgetnya.
-  
-- Buat create-task.html untuk halaman create-task todolist beserta widget-widgetnya.
-
-- Restriksi halaman todolist dan create-task ke login
-  
-- Buat forms.py yang berisi title dan description untuk menyimpan value create-task
-  
-- Buat cookies di views.py
-  
-- Buat file urls.py di dalam folder aplikasi dan tambah fungsi dari views.py sebagai jawaban pada halaman indeks (/).
-
-- Tambah urls.py sebelumnya ke dalam file urls.py di dalam folder proyek (project_django).
-
-- Buat fungsi bonus yaitu finish_user dan delete untuk mengganti status dan mendelete task
-
-- Buat aplikasi baru di Heroku, dan dapatkan API key dan nama aplikasinya di sana.
-
-- Tambah nama aplikasi dan api key ke dalam masing masing repository key
-
-- Add, commit, dan push perubahan yang ada. Lalu github action akan mendeploy
-
-- Buat readme.md dan menjawab segala pertanyaan yang ada
