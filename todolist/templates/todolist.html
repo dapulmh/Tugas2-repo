@@ -1,9 +1,40 @@
 
-  <html lang="en">
-    <meta charset="utf-8">
+<style>
+  .gradient-mycustom {
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    width: 100%;
+    height: 100%;
+  }
+
+  .card{
+
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    border-radius: 4px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 15px 80px 18px 36px;
+    cursor: pointer;
+    color: white;
+
+  }  
+
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+
+  body {
+    overflow-x: hidden;
+}
+</style>
+  
+<html lang="en">
+  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <nav class="navbar navbar-dark bg-dark fixed-top">
@@ -28,53 +59,56 @@
               </ul>
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Action
-               </a>
+              </a>
                <ul class="dropdown-menu-dark">
                 <li><a class="dropdown-item" href="{% url 'todolist:create-task' %}">Buat Task</a></li>
               </ul>
-          </ul>  
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
+    </script>
+    </link>
 
-  <div class = "justify-content-center mt-5">
+   <div class = "gradient-mycustom">
     <p><b>Nama: {{username}} </b></p>
-    <body style="background-color:#e8f9fd;">
-  {% if user_data %}
-  
-  <table border = "1" style = "allign-contain: center;">
+    <br>
+    <br>
     
-    <tr>
-      <th>title</th>
-      <th>Date</th>
-      <th>Description</th>
-      <th>Status</th>
-      <th>Action</th>
-    </tr>
-    {% comment %} Add the data below this line {% endcomment %}
-    {% for item in user_data %}
-    <tr>
-        <th>{{item.title}}</th>
-        <th>{{item.date}}</th>
-        <th>{{item.description}}</th>
+    {% if user_data %}
+    <div class="container">
 
-        {% if item.is_finished %}
-          <td>Already Finish</td>
-        {% else %}
-          <td>Not Finished Yet</td>
-        {% endif %}
-        <th>
-        <button style = "background-color:#c5cbe3"><a href="{% url 'todolist:finish_user' item.id %}" >Change Status </a></button>
-        <button style = "background-color:#c5cbe3"><a href="{% url 'todolist:delete_user' item.id %}">Delete</a></button>
-        </th>
-    </tr>
-    {% endfor %}
-  </table>
+      <div class="row row-cols-4 g-5 py-5 px-5 row d-flex justify-content-center">
+      {% comment %} Add the data below this line {% endcomment %}
+      {% for item in user_data %}
 
-  {% else %}
-	  <p>No Task Available</p>
-	  {% endif %}
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card .bg-gradient rounded">
+          <div class="card-body">
+            <h5 class="card-title">{{item.title}}</h5>
+            <p class="card-text">{{item.description}}</p>
+            <h5 class="card-date">{{item.date}}</h5>
+            {% if item.is_finished %}
+            <td>Already Finish</td>
+            {% else %}
+            <td>Not Finished Yet</td>
+            {% endif %}
+            <a style="color:white;"href="{% url 'todolist:delete_user' item.id %}">Delete</a>
+            <a style="color:white;"href="{% url 'todolist:finish_user' item.id %}">Change Status</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+      <p>No Task Available</p>
+      {% endif %}
 
-<h5>Sesi terakhir login: {{ last_login }}</h5>
-  </body>
+    
+  </meta>
+</meta>
+<body>Sesi terakhir login: {{ last_login }}</body>
 </div>
 </html>
+
