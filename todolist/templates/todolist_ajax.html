@@ -91,7 +91,7 @@
   <br>
   <br>
 
-  {% if user_data %}
+
   {% comment %} Add the data below this line {% endcomment %}
   <div id="data"> </div>
   <p><b>Nama: {{username}} </b></p>
@@ -154,6 +154,7 @@ $(document).ready(function () {
       success: function (json) {
         myModal.hide()
         show()
+        document.getElementById("formnya").reset();
       },
 
       error: function (xhr, errmsg, err) {
@@ -167,9 +168,7 @@ $(document).ready(function () {
 show()
 </script>
     
-  {% else %}
-  <p>No Task Available</p>
-  {% endif %}
+  
 
 
 
