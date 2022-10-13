@@ -1,3 +1,5 @@
+from http.client import HTTPResponse
+import json
 from todolist.models import TaskTodolist
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
@@ -7,9 +9,13 @@ import datetime
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.shortcuts import redirect
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, JsonResponse
 from django.urls import reverse
 from todolist.forms import TaskForm
+from django.http import HttpResponse
+from django.core import serializers
+from django.views.decorators.csrf import csrf_exempt
+
 
 # Create your views here.
 @login_required(login_url='/todolist/login/')
@@ -90,3 +96,40 @@ def delete_user(request, id):
     task = TaskTodolist.objects.get(id=id)
     task.delete()
     return redirect('todolist:show_todolist')
+
+
+@login_required(login_url='/todolist/login/')
+def show_json(request):
+    data = TaskTodolist.objects.all()
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+
+
+@login_required(login_url='/todolist/login/')
+def show_todolist_ajax(request):
+    data_user = TaskTodolist.objects.filter(user = request.user)
+    context = {
+        'user_data': data_user,
+        'username': request.user.username,
+        'last_login': request.COOKIES['last_login'],
+    }
+    
+    return render(request, "todolist_ajax.html", context)
+
+@login_required(login_url='/todolist/login/')
+def add_task_ajax(request):
+    if request.method == "POST":
+        user = request.user
+        date = datetime.date.today()
+        title = request.POST.get('title')
+        description = request.POST.get('description')  
+        is_finished = False   
+        new_task = TaskTodolist(user = user, date = date, title = title, description = description, is_finished = is_finished)
+        new_task.save()  
+        return JsonResponse({
+            'user' : new_task.id,
+            'date' : date,
+            'title' : title,
+            'description' : description,
+            'is_finished' : is_finished
+        })
